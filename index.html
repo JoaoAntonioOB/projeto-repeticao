@@ -7,31 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div>
+            <h1>Vamos Contar</h1>
+        </div>
+    </header>
     <main>
-        <h1>Vamos Contar</h1>
         <section>
             <form action="sla.php" method="get">
-                <div id="formulario">
-                    <div id="iinicio">
-                        <label for="inicio">Início</label>
-                        <input type="number" name="inicio" id="inicio">
+                <label for="inicio">Início</label>
+                    <p><input type="number" name="inicio" id="inicio"></p>
+                <label for="fim">Fim</label>
+                    <p><input type="number" name="fim" id="fim"></p>
+                <label for="passo">Passo</label>
+                    <p><input type="number" name="passo" id="passo"></p>
+                    <p><input type="button" value="Contar" onclick="contar()"></p>
+                    <div id="res">
+                        <p>Contando...</p>
                     </div>
-                    <div id="ifim">
-                        <label for="fim">Fim</label>
-                        <input type="number" name="fim" id="fim">
-                    </div>
-                    <div id="ipasso">
-                        <label for="passo">Passo</label>
-                        <input type="number" name="passo" id="passo">
-                    </div>
-                </div>
-                <div id="botao">
-                    <input type="button" value="Contar">
-                </div>
-                <div id="resultado">
-                    <h3>Contando:</h3>
-                    <p>contagem</p>
-                </div>
             </form>
         </section>
     </main>
